@@ -1,0 +1,204 @@
+\documentclass[12pt]{report}
+
+\usepackage{amssymb,amsthm}
+\usepackage{amsmath,color}
+%\usepackage{dsfont}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[document]{ragged2e}
+\usepackage{fancyhdr}
+% \usepackage[]{classicthesis}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true,    % Colours links instead of ugly boxes
+  urlcolor     = blue,    % Colour for external hyperlinks
+  linkcolor    = blue,    % Colour of internal links
+  citecolor    = red      % Colour of citations
+  }
+% \usepackage{cref}
+  
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\def\w{\mathtt w}
+\def\K{\mathcal K}
+\def\N{\mathbb N}
+\def\R{\mathcal R}
+\def\l{\ell}
+\def\S{\mathcal S}
+\def\Z{\mathbb Z}
+\def\ora{\overrightarrow}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+
+\begin{document}
+
+\begin{center}
+\LARGE{\textbf{Indian Institute of Technology, Delhi}}\\
+\vspace{0.8cm}
+\large{\textbf{Design Practices in Computer Science}}\\[5pt]
+\large{\textbf{COP290}}\\[5pt]
+
+\vspace{0.5cm}
+
+\large{\textbf{Public Distribution Systtem Design}}
+
+\begin{center}
+\includegraphics[height=5cm]{iitd.eps}
+\end{center}
+\vspace{0.2cm}
+
+\textbf{April 18, 2018} \\
+\textbf{Department of Computer Science and Engineering} \\
+\textbf{Indian Institute of Technology, Delhi}\\
+
+
+\vspace{1.5cm}
+
+\begin{multicols*}{2}
+
+\begin{flushleft}
+
+\textit{Author :\\ }
+
+
+\textbf{Udit Jain} \\
+(2016CS10327)\\
+
+\end{flushleft}
+
+
+\columnbreak
+
+\begin{flushleft}
+
+\textit{\\Supervisor :\\ }
+\textbf{Prof. Subhashish Bannerjee} \\[5pt]
+
+\end{flushleft}
+
+\end{multicols*}
+
+\end{center}
+
+\newpage
+
+\begin{center}
+\Large \bf ABSTRACT
+\end{center}
+\vspace{0.2in}
+
+I am going to design and present a model for a Public Distribution System for India. In this document , I'll talk about many vital and essential issues that have to be taken into account while designing a Digital Voting system for India. 
+\\
+\vspace{0.3cm}
+The Model will satisfy many properties which make it a good model. Then I will argue thet why is it a very good model to be implemented.
+
+
+% \vspace{0.5cm}
+
+In this design project, I shall work as observer, developer and algorithm enthusiast to understand the ways and finding different means to approach and tackle the objectives in a more well defined mathematical way. 
+
+\vspace{0.2cm}
+% I shall work with full confidence and zeal to achieve the goal or reach to quite an end of the problem so that using our lemmas, proofs and knowledge, someday a perfect model can be implemented using a software by some other Computer Explorer. As a matter of interest, I just wish to argue that these things can be computed by our brain so I do hope to find a solution to this problem using machine learning algorithms. Since, Machine Learning algorithms are more or less based on Mathematical matrices, with the use of computer graphics, I expect to find a start with matrices that I have dealt with further in this report. 
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\chapter{Introduction}
+
+The problem of Public Distribution is one that is not limited to India, but a major problem for developing countries. Using the cutting edge technology I hope to present a solution to this problem which will save us plants, workforce and sheer administrative manpower by a once effective and efficient investment by the governing body.
+\\
+% \cref{sec:baseline}
+% {Basic Rules}
+
+\vspace{0.5cm}
+
+The following objectives are aimed to be discussed in this paper:
+\begin{itemize}
+  \item
+  Defining the problem.
+  % Support you design decisions ? 
+  \item
+  Desirable properties 
+  % 9 SAK + 1 sankalan + others.
+  \item
+  Technical and Political Aspects
+  % Tradeoffs ? Making strong both  ?
+  \item
+  Helpful Systems/Algorithms .
+  % What are some things models already implemented ?
+  \item
+  Model  
+  % Correctness, Scaling, Implementation, Support for model 
+  \item
+  Correctness , scaling , feasibility and Implementation
+  \item 
+  Epilogue
+  % Closing the holes, who can we trust ? who will provide/manufacture the harware ? How will it be tested ?
+  % How does it help ? What all is improved ? Other applications of this model ?
+\end{itemize}
+
+\chapter{Defining the problem}
+\section{Introduction}
+\subsection{Why do we need a PDS ?}
+\section{How do we Currently Distribute ?}
+What are the shortfalls of current system, among other description
+Who can we trust in the sytstem ?
+
+
+\chapter{Desirable Properties}
+\section{Introduction}
+What should be some properties of an PDS ? And how should we decide them ?
+\section{Properties}
+Now let's formally list the ideally desirable properties of Distribution System.
+
+\chapter{Technical and Political Aspects}
+Can a model like this really be implemented ? Who has the power to do this ? Who will conduct this ?
+Social aspects ? Proof at every step ?
+\section{Key Aspects}
+
+\chapter{Useful Systems}
+\section{System in US ?}
+Directly packaging the products in tamper proof boxes ? Like LPG cylinders ? 
+
+\chapter{Model}
+\section{Software Part}
+\section{Hardware Part}
+\section{Social Part}
+How will people play a role ? How to incentivize/dis-incentivize them ?
+\section{Correctness}
+How many desirable properties does it satisfy ? How is it feasible for Implementation in the whole country ?
+\section{Scalability}
+\section{Implementational feasibility}
+
+
+\chapter{Epilogue}
+\section{What does it accomplish ?}
+What changes does it bring in the Elections that weren't there previously ?
+\section{Applications}
+Where else can this system be applied ?
+\section{Future Scope}
+
+
+\chapter{Conclusion}
+What are some key learnings throught this excercize ? The power of the system is in it's being fully open source,by the random checks and balances of the people so no middlemen / govt. employess can break it .
+
+% \begin{thebibliography}{9}
+% \bibitem{ALM}
+% P. Allen, B. Landman and H. Meeks, New Bounds on van der Waerden type numbers for Generalized $3$-term Arithmetic Progressions, {\it arXiv: 1201.3842v2}
+% \bibitem{BL}
+% S. Burr and S. Loo, On Rado numbers II, unpublished.
+% \end{thebibliography}
+
+\end{document}  
+
+
+
