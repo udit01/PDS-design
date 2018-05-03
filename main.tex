@@ -46,7 +46,7 @@
 
 \vspace{0.5cm}
 
-\large{\textbf{Public Distribution Systtem Design}}
+\large{\textbf{Public Distribution System Design}}
 
 \begin{center}
 \includegraphics[height=5cm]{iitd.eps}
@@ -60,6 +60,7 @@
 
 \vspace{1.5cm}
 
+  
 \begin{multicols*}{2}
 
 \begin{flushleft}
@@ -75,12 +76,12 @@
 
 \columnbreak
 
-\begin{flushleft}
+\begin{flushright}
 
-\textit{\\Supervisor :\\ }
+\textit{Supervisor :\\ }
 \textbf{Prof. Subhashish Bannerjee} \\[5pt]
 
-\end{flushleft}
+\end{flushright}
 
 \end{multicols*}
 
@@ -93,7 +94,7 @@
 \end{center}
 \vspace{0.2in}
 
-I am going to design and present a model for a Public Distribution System for India. In this document , I'll talk about many vital and essential issues that have to be taken into account while designing a Digital Voting system for India. 
+I am going to design and present a model for a Public Distribution System for India. In this document, I'll talk about many vital and essential issues that have to be taken into account while designing a Digital Voting system for India. 
 \\
 \vspace{0.3cm}
 The Model will satisfy many properties which make it a good model. Then I will argue thet why is it a very good model to be implemented.
@@ -112,9 +113,82 @@ In this design project, I shall work as observer, developer and algorithm enthus
 
 \newpage
 
+
+\chapter{Rough Ideas}
+These are some rough ideas thought, meant to be put cleanly in the final draft, remove this section after.
+Other Ideas are in Research papers.
+\section{Raw Ideas}
+\begin{itemize}
+  \item 
+Issues :- 
+\\
+\begin{enumerate}
+  \item 
+  Classification of families above/below poverty line . 
+  \item 
+  Outgoing grains << Incoming grains . 
+  \item 
+  Mixing of grains, Adulteration of grains. 
+  \item 
+  Whom can we trust in system .(Taking assumption that, shopkeepers are Rational ?). 
+  \item 
+  Identification where are is the fault and all data available to general public. ( On Blockchain?). 
+  \item 
+  Fingerprint like authentication doens't actually match .
+  \item
+  Network infractructure is not so good in these parts of India.
+
+\end{enumerate}
+\item
+If (Incoming + Adulteration == Outgoing) then how checking for Adulteration at each step .
+
+\item
+A govt certified machine in every PDS shop, like an electric meter, Keep the grains, inside it ? Or on it, that'd weight the grains, but how about large quantity and duplicacy ? 
+That machine will check for quality .
+
+\item
+Right now shops are assigned to different people .
+De-centralized PDS shops, (Rating + Review system) for each shop 
+
+\item
+Understanding actual PDS --- 
+Cost of (Computer+Person) > (Person) if this outweighs, the other cost. 
+Many overheads cost will make price/kg will increase --- > eq to cost of normally ~ 
+In rural areas, literacy is low , so to keep digital checkpoints simple .
+Keeping both quality and quantity labels and checks .
+
+\item
+Irrerisible openable containers, (like LPG cylinders), Once opened/tampered with , then everyone knows, (package for every person? )
+
+\item
+Have some random machines outside the shop ( diff for grains / oil etc ) and every/any random person can test the food . Enter the food and id of shop .
+
+\item
+Incentivising the middlemen .
+
+\item
+Propose a system and defend it . Only report ? No. Include UML diagrams/ Flowcharts for clarity . Simple and succint.
+
+\item
+Directly use FedEx / Postal system's / Amazon's thing , (just cite) or explain ?
+
+\item
+Prof. Retika mam's paper recommendations ? Smart card for everybody ? Pros and Cons of that system.
+Suppose we rely on Aadhar, then acknowledge the assumptions. How much of it'll work ?
+How much rely on Aadhar ? For acknowledgement about APL/BPL
+
+\item
+Policy is important or technology important ?
+
+\item
+What about feasibility of model ?  
+
+\end{itemize}
+
+
 \chapter{Introduction}
 
-The problem of Public Distribution is one that is not limited to India, but a major problem for developing countries. Using the cutting edge technology I hope to present a solution to this problem which will save us plants, workforce and sheer administrative manpower by a once effective and efficient investment by the governing body.
+The problem of a relaible Public Distribution is one that is not limited to India, but a very prominent problem for developing countries. Using the cutting edge technology I hope to present a solution to this problem which will save us plants, workforce and sheer administrative manpower by a once effective and efficient investment by the governing body.
 \\
 % \cref{sec:baseline}
 % {Basic Rules}
@@ -133,7 +207,7 @@ The following objectives are aimed to be discussed in this paper:
   Technical and Political Aspects
   % Tradeoffs ? Making strong both  ?
   \item
-  Helpful Systems/Algorithms .
+  Helpful Systems / Learning from other countries .
   % What are some things models already implemented ?
   \item
   Model  
@@ -141,7 +215,7 @@ The following objectives are aimed to be discussed in this paper:
   \item
   Correctness , scaling , feasibility and Implementation
   \item 
-  Epilogue
+  Epilogue/Conclusion
   % Closing the holes, who can we trust ? who will provide/manufacture the harware ? How will it be tested ?
   % How does it help ? What all is improved ? Other applications of this model ?
 \end{itemize}
@@ -162,17 +236,19 @@ Now let's formally list the ideally desirable properties of Distribution System.
 
 \chapter{Technical and Political Aspects}
 Can a model like this really be implemented ? Who has the power to do this ? Who will conduct this ?
-Social aspects ? Proof at every step ?
+Social aspects ? Proof of authenticity at every step ?
 \section{Key Aspects}
 
 \chapter{Useful Systems}
-\section{System in US ?}
+\section{System in Other Countries ?}
+How do Japan, USA (developed/developing coutries) manage delieveries of food and alike products in case of natural disasters, like draughts, crop faliure etc ?
+\\
 Directly packaging the products in tamper proof boxes ? Like LPG cylinders ? 
 
 \chapter{Model}
-\section{Software Part}
-\section{Hardware Part}
-\section{Social Part}
+\section{Software Aspect}
+\section{Hardware Aspect}
+\section{Social Aspect}
 How will people play a role ? How to incentivize/dis-incentivize them ?
 \section{Correctness}
 How many desirable properties does it satisfy ? How is it feasible for Implementation in the whole country ?
@@ -190,6 +266,7 @@ Where else can this system be applied ?
 
 \chapter{Conclusion}
 What are some key learnings throught this excercize ? The power of the system is in it's being fully open source,by the random checks and balances of the people so no middlemen / govt. employess can break it .
+
 
 % \begin{thebibliography}{9}
 % \bibitem{ALM}

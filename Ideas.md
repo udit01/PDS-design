@@ -1,7 +1,7 @@
 Issues :- 
 
 1. Classification of families above/below poverty line .
-2. Outgoing grains < Incoming grains 
+2. Outgoing grains << Incoming grains 
 3. Mixing of grains, Adulteration of grains, 
 4. Whom can we trust in system .(Taking assumption that, shopkeepers are Rational).
 5. Identification where are is the fault and all data available to general public. ( On Blockchain?).
